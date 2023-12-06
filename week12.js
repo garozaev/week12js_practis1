@@ -143,10 +143,11 @@ const buttonEleven = document.querySelector('.b-11');
 const resultEleven = document.querySelector('#resultEleven');
 
 const makeEleven = () => {
-	//Ваш код
+
+	resultEleven.innerHTML = 5 % 2;//Ваш код
 };
 
-//Добавьте слушатель события
+buttonEleven.addEventListener('click', makeEleven);//Добавьте слушатель события
 
 //Задание 12
 //Объедините строки str1 и str2. Добавьте слушатель события на кнопку "Задание 12" и выведите результат на экран.
@@ -157,10 +158,10 @@ const resultTwelve = document.querySelector('#resultTwelve');
 const makeTwelve = () => {
 	const str1 = 'Hello, ';
 	const str2 = 'World!';
-	//Ваш код
+	resultTwelve.innerHTML = str1 + str2; //Ваш код
 };
 
-//Добавьте слушатель события
+buttonTwelve.addEventListener('click', makeTwelve);//Добавьте слушатель события
 
 //Задание 13
 //Найдите длину строки str. Добавьте слушатель события на кнопку "Задание 13" и выведите результат на экран.
@@ -170,10 +171,10 @@ const resultThirteen = document.querySelector('#resultThirteen');
 
 const makeThirteen = () => {
 	const str = 'JavaScript';
-	//Ваш код
+	resultThirteen.textContent = str.length;//Ваш код
 };
 
-//Добавьте слушатель события
+buttonThirteen.addEventListener('click', makeThirteen);//Добавьте слушатель события
 
 //Задание 14
 //Приведите строку str к нижнему регистру. Добавьте слушатель события на кнопку "Задание 14" и выведите результат на экран.
@@ -183,10 +184,10 @@ const resultFourteen = document.querySelector('#resultFourteen');
 
 const makeFourteen = () => {
 	const str = 'JavaScript';
-	//Ваш код
+	resultFourteen.textContent = str.toLowerCase();//Ваш код
 };
 
-//Добавьте слушатель события
+buttonFourteen.addEventListener('click', makeFourteen);//Добавьте слушатель события
 
 //Задание 15
 //Приведите строку str к верхнему регистру. Добавьте слушатель события на кнопку "Задание 15" и выведите результат на экран.
@@ -196,10 +197,11 @@ const resultFifteen = document.querySelector('#resultFifteen');
 
 const makeFifteen = () => {
 	const str = 'JavaScript';
+	resultFifteen.textContent = str.toUpperCase();
 	//Ваш код
 };
 
-//Добавьте слушатель события
+buttonFifteen.addEventListener('click', makeFifteen);//Добавьте слушатель события
 
 //Задание 16
 //Получите подстроку из строки str, начиная с индекса 3 и до конца строки. Добавьте слушатель события на кнопку "Задание 16" и выведите результат на экран.
@@ -210,10 +212,10 @@ const resultSixteen = document.querySelector('#resultSixteen');
 
 const makeSixteen = () => {
 	const str = 'JavaScript';
-	//Ваш код
+	resultSixteen.innerHTML = str.slice(3);//Ваш код
 };
 
-//Добавьте слушатель события
+buttonSixteen.addEventListener('click', makeSixteen);//Добавьте слушатель события
 
 //Задание 17
 //Получите подстроку из строки str, начиная с индекса 3 и до индекса 7 (не включая его). Добавьте слушатель события на кнопку "Задание 17" и выведите результат на экран.
@@ -224,10 +226,10 @@ const resultSeventeen = document.querySelector('#resultSeventeen');
 
 const makeSeventeen = () => {
 	const str = 'JavaScript';
-	//Ваш код
+	resultSeventeen.innerHTML = str.slice(3,7);//Ваш код
 };
 
-//Добавьте слушатель события
+buttonSeventeen.addEventListener('click', makeSeventeen);//Добавьте слушатель события
 
 //Задание 18
 //Замените все вхождения подстроки 'world' на 'JavaScript' в строке str. Добавьте слушатель события на кнопку "Задание 18" и выведите результат на экран.
@@ -237,10 +239,10 @@ const resultEighteen = document.querySelector('#resultEighteen');
 
 const makeEighteen = () => {
 	const str = 'Hello, world!';
-	//Ваш код
+	resultEighteen.innerHTML = str.replace(/world/g, 'JavaScript');//Ваш код
 };
 
-//Добавьте слушатель события
+buttonEighteen.addEventListener('click', makeEighteen);//Добавьте слушатель события
 
 //Задание 19
 //Получите подстроку из строки str, начиная с индекса 7 и длиной 6 символов. Добавьте слушатель события на кнопку "Задание 19" и выведите результат на экран.
@@ -250,10 +252,10 @@ const resultNineteen = document.querySelector('#resultNineteen');
 
 const makeNineteen = () => {
 	const str = 'Hello, world!';
-	//Ваш код
+	resultNineteen.innerHTML = str.slice(7);//Ваш код
 };
 
-//Добавьте слушатель события
+buttonNineteen.addEventListener('click', makeNineteen);//Добавьте слушатель события
 
 //Задание 20
 //Найдите максимальное число из чисел 10, 25, 5, 30, 15. Добавьте слушатель события на кнопку "Задание 20" и выведите результат на экран.
@@ -263,10 +265,10 @@ const buttonTwenty = document.querySelector('.b-20');
 const resultTwenty = document.querySelector('#resultTwenty');
 
 const makeTwenty = () => {
-	//Ваш код
+	resultTwenty.innerHTML = Math.max(10,25,5,30,15);//Ваш код
 };
 
-//Добавьте слушатель события
+buttonTwenty.addEventListener('click', makeTwenty);//Добавьте слушатель события
 
 // Задание 21
 // Выведите на экран случайное целое число от 1 до 10. Добавьте слушатель события на кнопку "Задание 21" и выведите результат на экран.
@@ -275,10 +277,10 @@ const buttonTwentyOne = document.querySelector('.b-21');
 const resultTwentyOne = document.querySelector('#resultTwentyOne');
 
 const makeTwentyOne = () => {
-	//Ваш код
+	resultTwentyOne.innerHTML = Math.ceil(Math.random() * 10);//Ваш код
 };
 
-//Добавьте слушатель события
+buttonTwentyOne.addEventListener('click', makeTwentyOne);//Добавьте слушатель события
 
 //Задание 22
 //Найдите минимальное число из чисел 10, 25, 5, 30, 15. Добавьте слушатель события на кнопку "Задание 21" и выведите результат на экран.
@@ -288,10 +290,10 @@ const buttonTwentyTwo = document.querySelector('.b-22');
 const resultTwentyTwo = document.querySelector('#resultTwentyTwo');
 
 const makeTwentyTwo = () => {
-	//Ваш код
+	resultTwentyTwo.innerHTML = Math.min(10, 25, 5, 30, 15);//Ваш код
 };
 
-//Добавьте слушатель события
+buttonTwentyTwo.addEventListener('click', makeTwentyTwo);//Добавьте слушатель события
 
 //Задание 23
 //Выведите на экран результат возведения числа 2 в степень 5. Добавьте слушатель события на кнопку "Задание 23" и выведите результат на экран.
@@ -301,10 +303,10 @@ const buttonTwentyThree = document.querySelector('.b-23');
 const resultTwentyThree = document.querySelector('#resultTwentyThree');
 
 const makeTwentyThree = () => {
-	//Ваш код
+	resultTwentyThree.innerHTML = (2 ** 5);//Ваш код
 };
 
-//Добавьте слушатель события
+buttonTwentyThree.addEventListener('click', makeTwentyThree);//Добавьте слушатель события
 
 //Задание 24
 //Выведите на экран наименьшее число из чисел 7, 3, 11, 5, 9. Добавьте слушатель события на кнопку "Задание 24" и выведите результат на экран.
@@ -313,10 +315,10 @@ const buttonTwentyFour = document.querySelector('.b-24');
 const resultTwentyFour = document.querySelector('#resultTwentyFour');
 
 const makeTwentyFour = () => {
-	//Ваш код
+	resultTwentyFour.textContent = Math.min(7, 3, 11, 5, 9);//Ваш код
 };
 
-//Добавьте слушатель события
+buttonTwentyFour.addEventListener('click', makeTwentyFour);//Добавьте слушатель события
 
 //Задание 25
 //Выведите на экран наибольшее число из чисел 7, 3, 11, 5, 9. Добавьте слушатель события на кнопку "Задание 25" и выведите результат на экран.
@@ -325,10 +327,10 @@ const buttonTwentyFive = document.querySelector('.b-25');
 const resultTwentyFive = document.querySelector('#resultTwentyFive');
 
 const makeTwentyFive = () => {
-	//Ваш код
+	resultTwentyFive.innerHTML = Math.max(7, 3, 11, 5, 9);//Ваш код
 };
 
-//Добавьте слушатель события
+buttonTwentyFive.addEventListener('click', makeTwentyFive);//Добавьте слушатель события
 
 //Задание 26
 //Выведите на экран случайное число от 0 до 1 с точностью до 4 знаков после запятой. Добавьте слушатель события на кнопку "Задание 26" и выведите результат на экран.
@@ -338,10 +340,10 @@ const buttonTwentySix = document.querySelector('.b-26');
 const resultTwentySix = document.querySelector('#resultTwentySix');
 
 const makeTwentySix = () => {
-	//Ваш код
+	resultTwentySix.innerHTML = ((Math.random()).toFixed(4));//Ваш код
 };
 
-//Добавьте слушатель события
+buttonTwentySix.addEventListener('click', makeTwentySix);//Добавьте слушатель события
 
 //Задание 27
 //Выведите на экран случайное целое число от 50 до 100. Добавьте слушатель события на кнопку "Задание 27" и выведите результат на экран.
@@ -350,10 +352,10 @@ const buttonTwentySeven = document.querySelector('.b-27');
 const resultTwentySeven = document.querySelector('#resultTwentySeven');
 
 const makeTwentySeven = () => {
-	//Ваш код
+	resultTwentySeven.innerHTML = Math.floor(Math.random() * (100 - 50)) + 50;//Ваш код
 };
 
-//Добавьте слушатель события
+buttonTwentySeven.addEventListener('click', makeTwentySeven);//Добавьте слушатель события
 
 //Задание 28
 //Округлите число 4.47 в большую сторону с помощью метода Math.ceil(). Добавьте слушатель события на кнопку "Задание 28" и выведите результат на экран.
@@ -362,10 +364,11 @@ const buttonTwentyEight = document.querySelector('.b-28');
 const resultTwentyEight = document.querySelector('#resultTwentyEight');
 
 const makeTwentyEight = () => {
+	resultTwentyEight.innerHTML = Math.ceil(4.47);
 	//Ваш код
 };
 
-//Добавьте слушатель события
+buttonTwentyEight.addEventListener('click', makeTwentyEight);//Добавьте слушатель события
 
 //Задание 29
 //Получите квадратный корень из числа 16 с помощью метода Math.sqrt(). Добавьте слушатель события на кнопку "Задание 29" и выведите результат на экран.
@@ -374,10 +377,10 @@ const buttonTwentyNine = document.querySelector('.b-29');
 const resultTwentyNine = document.querySelector('#resultTwentyNine');
 
 const makeTwentyNine = () => {
-	//Ваш код
+	resultTwentyNine.innerHTML = Math.sqrt(16);//Ваш код
 };
 
-//Добавьте слушатель события
+buttonTwentyNine.addEventListener('click', makeTwentyNine);//Добавьте слушатель события
 
 //Задание 30
 //Получите квадратный корень из числа 25 с помощью метода Math.sqrt(). Добавьте слушатель события на кнопку "Задание 30" и выведите результат на экран.
@@ -386,7 +389,7 @@ const buttonThirty = document.querySelector('.b-30');
 const resultThirty = document.querySelector('#resultThirty');
 
 const makeThirty = () => {
-	//Ваш код
+	resultThirty.innerHTML = Math.sqrt(25);//Ваш код
 };
 
-//Добавьте слушатель события
+buttonThirty.addEventListener('click', makeThirty);//Добавьте слушатель события
